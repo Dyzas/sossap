@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos événements - SOS sac à puces</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="csssossap.css"> 
+</head>
+<body>
+    <header>
+        <h1>Nos événements</h1>
+    </header>
+    <a href="sossap.html">Acceuil</a>
+    <section class="events">
+        <div class="grid">
+            <div class="card">
+            <img src="https://cdn.sortiraparis.com/images/80/1665/882352-spa-les-journees-portes-ouvertes-adoption-de-retour-en-mai-dans-63-refuges.jpg" alt="Événement 1">
+            <h2>Journées Portes ouvertes</h2>
+            <p>Du 13 mai 2023 au 14 mai 2023</p>
+            <p>Nous vous acceuillons avec joie dans notre association pour peut être vous faire rencontrer votre sac à puces à vous.</p>
+        </div>
+        <div class="grid">
+            <div class="card">
+            <img src="https://www.grand-mercredi.com/wp-content/uploads/2017/01/EN-VACANCES-FERME-EUROPEENNE.jpg" alt="Événement 2">
+            <h2>Rencontre à la ferme</h2>
+            <p>Du 16 juillet 2023 au 18 juillet 2023</p>
+            <p>Nous enmenons vos enfants à la decouverte de la vie à la ferme au con,tact de nos agriculteurs préférés</p>
+        </div>
+        <div class="grid">
+            <div class="card">
+            <img src="https://www.knid-dressage.com/wp-content/uploads/2022/07/Knid-dressage-canin.webp" alt="Événement 3">
+            <h2>Dressage Canin</h2>
+            <p>Du 4 septembre 2023 au 8 septembre 2023</p>
+            <p>Venez avec votre compagnon, apprendre a vous connaitre et a mieux le gérer. Assis, coucher, la patte etc votre petit ami poilu ne sertas pas le même après ce stage</p>
+        </div>
+    </section>
+    <section class="participate">
+        <h2>Comment participer ?</h2>
+        <p>Pour participer à nos événements, veuillez vous nous contacter sur notre site ou acheter des billets en ligne.</p>
+        <a href="sossap.html#contact" class="btn btn-primary">Contacter</a>
+        <!-- Bouton pour lancer la deuxieme modal -->
+        <button type="button" id="myBtn2" class="btn btn-primary">Billeterie</button>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="myModalLabel">Maintenance</h4>
+                  <button type="button" class="close2" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                  La page est malheureusement en maintenance
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="sossap2.js"></script>
+</body>
+</html>
