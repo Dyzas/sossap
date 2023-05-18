@@ -1,173 +1,155 @@
 /* Style pour le corps de la page */
 body {
-    background-color: #c9ddf1; /* Couleur de fond */
-    font-family: Arial, sans-serif; /* Police de caractères */
-  }
-  
-  /* Style pour l'image */
-  img {
-    float: left; /* Alignement à gauche */
-    margin-right: 20px; /* Marge à droite */
-    transform: scale(0.75); /* Enlever 1/4 de sa taille*/
-    border: 2px solid #1A4E8B; /* bordure pour l'image de couimeur*/
-    padding: 2px;
-  }
-  
-  /* Style pour le titre */
-  h1 {
-    display: flex;
-    border: 2px solid #274363; /* Encadrement */
-    padding: 10px; /* Espacement intérieur */
-    font-size: 36px; /* Taille de police */
-    color: #022144; /* Couleur du texte */
-    text-align: center; /* Centrage horizontal */
-  }
+  background: linear-gradient(to bottom, #acd0f3, #5497e4);
+  font-family: Arial, sans-serif;
+}
+/* Style pour l'image */
+img {
+  float: left; /* Alignement à gauche */
+  margin-right: 20px; /* Marge à droite */
+  transform: scale(0.75); /* Réduire la taille de l'image */
+  border: 2px solid #aacbee; /* Bordure pour l'image de couleur */
+  padding: 2px;
+}
+/* Style pour le titre */
+h1 {
+  display: flex;
+  border: 2px solid #274363; /* Encadrement */
+  padding: 10px; /* Espacement intérieur */
+  font-size: 36px; /* Taille de police */
+  color: #022144; /* Couleur du texte */
+  text-align: center; /* Centrage horizontal */
+  background-color: white;
+}
+/* Style pour les sous-titres */
+h2 {
+  padding: 10px; /* Espacement intérieur */
+  font-size: 36px; /* Taille de police */
+  color: #033369; /* Couleur du texte */
+  text-decoration: underline;
+}
+/* Style pour le bouton */
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #0d6efd;
+  transition: background-color 0.2s ease-in-out;
+}
 
-  h2 {
-    padding: 10px; /* Espacement intérieur */
-    font-size: 36px; /* Taille de police */
-    color: #033369; /* Couleur du texte */
-    text-decoration: underline;
-  }
-  /*style pour le boutons*/
-  button {
-    margin: 10px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #fff;
-    background-color: #1977db;
-    transition: background-color 0.2s ease-in-out;
-  }
-  
-  button:hover {
-    background-color: #143355;
-  }
-  
-  
-  /* Style pour les tons bleus */
-  .blue-dark {
-    background-color: #1A4E8B; /* Couleur de fond bleu foncé */
-    color: white; /* Couleur du texte blanc */
-  }
-  
-  .blue-light {
-    background-color: #B2C8D6; /* Couleur de fond bleu clair */
-    color: #1A4E8B; /* Couleur du texte bleu foncé */
-  }
-  
-  /* Style pour les cartes d'événements */
-  .events-container {
-    display: flex;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  
-  .card {
-    width: 30%;
-    margin-bottom: 20px;
-  }
-  
-  .card {
-    display: inline-block; /* Affichage en ligne */
-    width: 100%; /* Largeur des cartes */
-    margin: 1%; /* Marge autour des cartes */
-    vertical-align: top; /* Alignement vertical */
-    box-shadow: 2px 2px 5px #888; /* Ombre */
-    border: 1px solid #1e84c4; /* Bordure */
-    padding: 10px; /* Espacement intérieur */
-    background-color: #fff; /* back color*/
-  }
-  
-  .card img {
-    width: 100%;
-    height: 60%;
-    object-fit: cover;
-  }
+button:hover {
+  background-color: #aacbee;
+}
+
+/* Style pour le footer */
+footer {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-top: 4px solid #274363;
+}
+
+/* Style des éléments du footer */
+footer p {
+  margin: 0;
+  font-size: 30px;
+}
+
 /* Pour tous les boutons */
-button, input[type="submit"], input[type="reset"] {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  /* Pour les boutons de lien */
-  a.btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 16px;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
+button,
+input[type="submit"],
+input[type="reset"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0d6efd;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Pour les boutons de lien */
+a.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0d6efd;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* Style général des modals */
 .modal {
-    display: none; /* Masque la modal par défaut */
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
+  display: none; /* Masque la modal par défaut */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Style du contenu de la modal */
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* Affiche la modal lorsqu'elle est ouverte */
+.modal.show {
+  display: block;
+}
+/* Media query pour les écrans de largeur maximale de 767 pixels */
+@media screen and (max-width: 767px) {
+  /* Style pour les titres */
+  h1 {
+    font-size: 30px; /* Réduire la taille de police */
   }
-  
-  /* Style du contenu de la modal */
-  .modal-content {
-    background-color: white;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
+  h2 {
+    font-size: 25px; /* Réduire la taille de police */
   }
-  
-  /* Affiche la modal lorsqu'elle est ouverte */
-  .modal.show {
-    display: block;
+
+  /* Masquer l'image */
+  img {
+    display: none;
   }
-  /* Media queries pour une approche mobile-first */
-  
-  /* Pour les écrans de taille moyenne et plus */
-  @media screen and (min-width: 768px) {
-  
-    /* Style pour l'image */
-    img {
-      transform: scale(1); /* Retour à sa taille initiale */
-    }
-  
-    /* Style pour les titres */
-    h1 {
-      font-size: 48px; /* Augmenter la taille de police */
-    }
-  
-    /* Style pour les cartes d'événements */
-    .card {
-      width: 48%; /* Réduire la largeur des cartes */
-      margin: 1%; /* Marge autour des cartes */
-    }
-  
-    /* Style pour la section "Nos événements" */
-    .events-container {
-      display: flex; /* Affichage en ligne */
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-top: 40px; /* Ajouter une marge en haut */
-    }
-  
-    /* Style pour la section "Comment participer ?" */
-    .how-to-participate {
-      margin-top: 40px; /* Ajouter*/}
-    }
+
+  /* Style pour le texte du titre */
+  .title-text {
+    margin-left: 0; /* Supprimer l'espacement à gauche */
+    margin-top: 10px; /* Ajouter un espacement en haut */
+  }
+
+  /* Style pour le footer */
+  footer {
+    position: relative;
+    margin-top: auto; /* Définir une marge automatique en haut pour pousser le footer vers le bas */
+    display: flex;
+    justify-content: flex-start; /* Alignement à gauche */
+    padding: 10px;
+  }
+
+  /* Style pour les éléments du footer */
+  footer p {
+    margin: 0;
+    font-size: 16px; /* Réduire la taille de police */
+  }
+}
