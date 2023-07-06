@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <script src="C:\DevWeb\bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./csssossap.css">
+    <script src="./sossap.js"></script>
+    <title>SOS Sac à Puces - Accueil</title>
+</head>
+<body>
+    <header>
+        <h1>SOS Sac à Puces</h1>
+        <a href="./evenements.html">Voir nos événements</a>
+    </header>
+
+    <main>
+        <section>
+            <h2>Qui sommes-nous ?</h2>
+            <p>Créée en 2008, SOS Sacs à Puces du Comtat est une association à loi 1901 à but non lucratif basée à Carpentras. Elle soigne, nourrit et stérilise les chats "libres" de la ville et ses environs. Les actions de l'association passent de la mise à l'adoption, à l'aide aux propriétaires d'animaux en difficulté, en passant par des actions d'information et de sensibilisation à la protection animale. L'association procède à l'adoption et au placement des chats adultes et des chatons en famille d'accueil. </p>
+            <img src="https://sacapuces.org/img/logo_lg.png" alt="Image de l'association">
+        </section>
+
+        <section>
+            <h2>Notre équipe</h2>
+            <div class="team-member">
+                <p>SOS Sacs à Puces c'est aussi des hommes et des femmes qui donnent de leur temps par amour des animaux. Ils contribuent à leur sauvegarde et leur apportent réconfort et soins. Chaque jour ils accomplissent une action noble et désintéressée, qui contribue activement à la diminution d'une souffrance animale souvent méconnue et beaucoup trop ignorée.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Comment nous aider ?</h2>
+            <p>Vous pouvez soutenir notre association en faisant un don ou en devenant bénévole.</p>
+            <a href="#" class="btn btn-primary">Devenir bénévole</a>
+            <!-- Bouton pour ouvrir la première modal -->
+            <button type="button" id="myBtn" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Faire un don</button>
+            <!-- La première modal -->
+            <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Faites des dons</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Merci pour votre participation, toute l'équipe vous remercie !
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                            <button type="button" class="btn btn-primary">Sauvegarder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <form action="envoyer-email.php" method="POST">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+    
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Adresse : 17 Place de l'horloge, 84200 Carpentras</p>
+        <p>Téléphone : 06.89.99.48.13</p>
+    </footer>
+  </body>
+</html>
